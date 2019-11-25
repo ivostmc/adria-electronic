@@ -1,0 +1,9 @@
+<ul class="homepage-list" *ngIf="rooms && rooms.length > 0">
+    <li *ngFor="let room of rooms">
+        <a routerLink="/detail/{{room.id}}">
+            <p class="zone">Zone: {{room.zone}}</p>
+            <p>Name: {{room.name}}</p>
+            <p>Address: {{room.address}}</p>
+        </a>
+    </li>
+</ul>

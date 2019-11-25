@@ -1,0 +1,7 @@
+<nav *ngIf="sidebarRooms" class="sidenav">
+        <a routerLink="/home" routerLinkActive="active-link">Home</a>
+        <a routerLink="/detail/{{room.id}}" routerLinkActive="active-link" *ngFor="let room of sidebarRooms">{{room.name}}</a>
+        <p>Next Croatian Holyday</p>
+        <p>{{nextHolyDay.name}}</p>
+        <p>{{date | date:"dd/MM/yyyy"}}</p>
+</nav>

@@ -1,0 +1,54 @@
+<div class="detail" *ngIf="selectedRoom">
+    <h1>{{selectedRoom.name}} Details</h1>
+    <hr>
+    <div class="main-info">
+        <p>Name: {{selectedRoom.name}}</p>
+        <p>Address: {{selectedRoom.address}}</p>
+        <p>Zone: {{selectedRoom.zone}}</p>
+    </div>
+    <div>
+        <h2>Properties</h2>
+        <hr>
+        <div class="properties">
+            <div class="setTemp">
+                <label for="temperature">Set temperature: </label>
+                <input id="temperature" type="number" [(ngModel)]="tempRoomSetValue" placeholder="temperature" />
+                <button (click)="updateTemperature()">save</button>
+            </div>
+            <p>Current temperature: {{tempRoomCurrent}}</p>
+            <p *ngIf="dnd">DND</p>
+            <p *ngIf="occupied">Occupied</p>
+        </div>
+    </div>
+    <div>
+        <button class="settingsButton" (click)="showSettings =!showSettings;
+        (!showSettings) ? showSettingsLabel='Show settings' : showSettingsLabel='Hide settings'">{{showSettingsLabel}}</button>
+        <div *ngIf="selectedRoom && showSettings">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let setting of selectedRoom.settings">
+                        <td>{{setting.Id}}</td>
+                        <td>{{setting.settingName}}</td>
+                        <td>{{setting.settingValue}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <button class="QR" (click)="generateQRcode =!generateQRcode;
+        (!generateQRcode) ? generateQRcodeLabel='Generate QR code' : generateQRcodeLabel='Hide QR code';
+        showQR(generateQRcode);">{{generateQRcodeLabel}}</button>
+        <div>
+            <img *ngIf="generateQRcode" [src]="qrUrl">
+        </div>
+    </div>
+
+</div>

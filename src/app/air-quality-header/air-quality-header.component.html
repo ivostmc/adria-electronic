@@ -1,0 +1,22 @@
+<header class="airQualityHeader">
+    <h1>Rijeka Air Quality</h1>
+    <div>
+        <div *ngFor="let measurement of measurements">
+            <p *ngIf="measurement.parameter === 'so2'">SO<sub>2</sub> =
+                {{measurement.value}}{{measurement.unit}}
+            </p>
+            <p *ngIf="measurement.parameter === 'no2'">NO<sub>2</sub> =
+                {{measurement.value}}{{measurement.unit}}
+            </p>
+            <p *ngIf="measurement.parameter === 'o3'">O<sub>3</sub> =
+                {{measurement.value}}{{measurement.unit}}
+            </p>
+            <p *ngIf="measurement.parameter === 'pm10'">PM10 =
+                {{measurement.value}}{{measurement.unit}}
+            </p>
+            <p *ngIf="measurement.parameter === 'co'">CO =
+                {{measurement.value}}{{measurement.unit}}
+            </p>
+        </div>
+    </div>
+</header>

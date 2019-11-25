@@ -1,0 +1,53 @@
+div.detail{
+    div.main-info{
+        padding: 2rem;
+        p{
+            margin-bottom: 0.5rem;
+        }
+    }
+    div.properties{
+        padding: 2rem;
+        div.setTemp, p{
+            margin-bottom: 0.5rem;
+        }
+    }
+    button.settingsButton{
+        cursor: pointer;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    button.settingsButton + div{
+        padding: 2rem;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table td, table th{
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    table tr:nth-child(even){background-color: #f2f2f2;}
+    table tr:hover {background-color: #ddd;}
+    table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: blue;
+        color: white;
+      }
+    button.QR{
+        cursor: pointer;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    button.QR + div img{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
