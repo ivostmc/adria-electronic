@@ -1,31 +1,18 @@
-<<<<<<< HEAD
-# AdriaElectronic
+Upute za generirati i testirati sajt:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+1. Na PC treba instalirati Angular-cli i dependency Node.js
+Detaljne upute kako instalirati Angular-cli i Node.js možete pronaći na ovoj stranici: https://angular.io/guide/setup-local
 
-## Development server
+2.Klonirati ovaj projekt:
+Odabrati folder i kroz cmd izvršiti naredbu git clone [githubrepository ovog projekta]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. Nako što ste klonirali projekt u folderu adria-electronic preko cmd izvršiti naredbu npm update
 
-## Code scaffolding
+4. Prije nego što pokrenete sajt unjeti api_key koji vam šaljem mailom u ovaj fail: C:\adria-electronic\src\app\holiday.service.ts
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+5. Nakon što ste unjeli api_key u folderu adria-electronic preko cmd izvršiti ng serve
 
-## Build
+6. Otvoriti browser na http://localhost:4200/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# adria-electronic
->>>>>>> 5db2fc3516d01ce438be86b1dd654618f1db96b8
